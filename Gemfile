@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+gem 'gmaps4rails', '2.1.2'
+gem 'govuk_template', '0.13.0'
+gem 'govuk_frontend_toolkit', '4.0.0'
+gem 'json'
+gem 'geokit'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -42,4 +47,3 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
