@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>RegisterOffice</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
-</html>
+<% content_for(:head) do %>
+  <%= javascript_include_tag "application" %>
+  <link href="https://assets.digital.cabinet-office.gov.uk/static/static-e8e82441228bca6ae63eaee0b1fdda33.css" rel="stylesheet" />
+<% end %>
+<%= render :file => 'layouts/govuk_template' %>
